@@ -1,0 +1,17 @@
+# Build output (recreated by "mvn clean package")
+target/
+*.class
+
+# Local database files
+*.mv.db
+*.trace.db
+
+# Editor and OS files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+Thumbs.db
+.DS_Store
