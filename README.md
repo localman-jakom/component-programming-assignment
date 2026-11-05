@@ -7,6 +7,15 @@ Two Maven projects:
 | `unitconverter/` | The reusable component: a unit converter library packaged as `unitconverter-1.0.jar` |
 | `shipping-calculator/` | A shipping quotation app that reuses the component (window, console and command-line modes, H2 database) |
 
+The built jars are included, so the app runs without building:
+
+```
+cd shipping-calculator/target
+java -jar shipping-calculator-1.0.jar
+```
+
+The component on its own is `unitconverter/target/unitconverter-1.0.jar`.
+
 ## Build
 
 Requires JDK 17+ and Maven. Build the component first, because the app gets it from the local Maven repository.

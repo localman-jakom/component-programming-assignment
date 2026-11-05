@@ -1,5 +1,13 @@
-# Build output (recreated by "mvn clean package")
-target/
+# Build output is ignored, except the built jars, so they appear on GitHub
+# in the same place as on your computer:
+#   unitconverter/target/unitconverter-1.0.jar
+#   shipping-calculator/target/shipping-calculator-1.0.jar
+#   shipping-calculator/target/lib/  (libraries the app needs to run)
+**/target/*
+!**/target/*.jar
+!**/target/lib/
+**/target/*-javadoc.jar
+**/target/*-sources.jar
 *.class
 
 # Local database files
